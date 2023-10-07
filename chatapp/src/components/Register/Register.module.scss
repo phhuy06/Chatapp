@@ -1,0 +1,68 @@
+.wrapper {
+    width: 35%;
+    height: 80%;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: transparent;
+    .header {
+        height: 20%;
+        display: flex;
+        h3 {
+            margin: auto;
+            color: burlywood;
+            font-size: 5rem;
+        }
+    }
+    .container {
+        height: 50%;
+        form {
+            div {
+                display: flex;
+                border-bottom: 1px solid white;
+                color: white;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                input {
+                    background-color: transparent;
+                    outline: none;
+                    border: none;
+                    margin-left: 20px;
+                    color: white;
+                    position: relative;
+                    height: 50px;
+                    flex: 1;
+                    &::placeholder {
+                        color: white;
+                    }
+                }
+            }
+            button {
+                width: 100%;
+                margin-top: 60px;
+                height: 40px;
+                background-color: burlywood;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            span {
+                color: red;
+                position: absolute;
+            }
+        }
+    }
+    .footer {
+        color: white;
+        button {
+            width: 200px;
+            height: 30px;
+            text-wrap: nowrap;
+            border-radius: 5px;
+            background-color: burlywood;
+            cursor: pointer;
+        }
+    }
+}

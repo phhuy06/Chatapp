@@ -1,0 +1,39 @@
+:root {
+    --primaty: #fe2c55;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    background-image: url('/src/assets/images/bg_gif.gif');
+    background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+button {
+    border: none;
+}

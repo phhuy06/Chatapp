@@ -1,0 +1,36 @@
+.wrapper {
+    position: absolute;
+    width: 20%;
+    height: 100px;
+    right: 0;
+    top: 20px;
+    background-color: rgb(43, 128, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+    animation: slide-in ease-in-out 1s forwards, slide-out ease-in-out 1s 2s forwards;
+}
+
+.red {
+    background-color: red;
+}
+
+@keyframes slide-in {
+    from {
+        right: -20%;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        right: 0;
+    }
+    to {
+        right: -20%;
+    }
+}
