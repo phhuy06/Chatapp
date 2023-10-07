@@ -6,11 +6,15 @@ import jwt_decode from 'jwt-decode';
 import Message from '../../components/Message';
 import Socket from '../../Socket';
 function Main() {
+    let x = '';
     const [message, setMessage] = useState('');
     const [listMess, setListMess] = useState([]);
     const [name, setName] = useState('');
     const [cookies] = useCookies([]);
-    const [decode] = useState(jwt_decode(cookies.token));
+    if(cookies.token){
+        x = jwt_decode(cookies.token);
+    }
+    const [decode] = useState(x);
     const [fullname, setFullname] = useState(decode.account);
     const navigate = useNavigate();
     const ref = useRef();
