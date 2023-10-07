@@ -11,7 +11,7 @@ function Main() {
     const [listMess, setListMess] = useState([]);
     const [name, setName] = useState('');
     const [cookies] = useCookies([]);
-    if(cookies.token){
+    if (cookies.token) {
         x = jwt_decode(cookies.token);
     }
     const [decode] = useState(x);
@@ -30,6 +30,9 @@ function Main() {
                 if (fullname[i] === ' ') {
                     name = fullname.slice(i + 1);
                     break;
+                }
+                if (i === 0) {
+                    name = fullname;
                 }
             }
             setFullname(fullname);
